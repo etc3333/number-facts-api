@@ -1,0 +1,30 @@
+#nav-bar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: lightgrey;
+    width: 100vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 2;
+}
+
+li {
+    display: inline-block;
+}
+
+.tab {
+    padding: 10px 10px 10px 10px;
+}
+
+.active {
+    background-color: lightblue;
+}
+
+#nav-bar a {
+    transition: .15s;
+}
+
+#nav-bar a:hover {
+    opacity: .5;
+}

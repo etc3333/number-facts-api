@@ -1,0 +1,70 @@
+.format-MyFacts {
+    display: flex;
+    justify-content: center;
+    padding-top: 184.5px;
+  }
+  
+  .list-box {
+    border: double;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    width: 600px;
+    min-height: 500px;
+    z-index: 1;
+  }
+
+  .list-box h1, .list-box h3 {
+    text-align: center;
+  }
+  
+  .list-fact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    border: solid black;
+    margin-top: 10px;
+    height: 70px;
+    cursor: pointer;
+    transition: transform .2s;
+  }
+
+  .list-fact:hover {
+    transform: scale(1.5);
+  }
+  
+  .selected {
+    transform: translateX(100px);
+    border: lightcoral solid;
+  }
+
+  .selected:hover {
+    transform: scale(1.5) translateX(100px);
+  }
+
+  .utilities-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .trashcan-icon-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+  }
+
+  .trashcan-icon {
+    color: pink;
+  }
+
+  .trashcan-icon:hover {
+    color: red;
+    cursor: pointer;
+  }
