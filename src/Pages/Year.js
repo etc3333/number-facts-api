@@ -18,7 +18,6 @@ export const Year = (props) => {
         
         const fetchData = () => {
             if (render === true) { 
-                console.log("year");
                 const options = {
                     method: 'GET',
                     headers: {

@@ -18,7 +18,6 @@ export const Trivia = (props) => {
         
         const fetchData = () => {
             if (render === true) { 
-                console.log("trivia");
                 const options = {
                     method: 'GET',
                     headers: {

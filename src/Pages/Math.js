@@ -18,7 +18,6 @@ export const Math = (props) => {
         
         const fetchData = () => {
             if (render === true) { 
-                console.log("math");
                 const options = {
                     method: 'GET',
                     headers: {

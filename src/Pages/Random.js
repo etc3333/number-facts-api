@@ -16,7 +16,6 @@ export const Random = (props) => {
     useEffect(() => {
         const fetchData = () => {
             if (render === true) {
-                console.log("home");
                 const choices = ["trivia", "math", "date", "year"];
                 function getRandom(min, max) {
                     return Math.floor(Math.random() * (max - min + 1) ) + min;

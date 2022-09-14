@@ -18,7 +18,6 @@ export const Date = (props) => {
         
         const fetchData = () => {
             if (render === true) { 
-                console.log("Date");
                 const options = {
                     method: 'GET',
                     headers: {
