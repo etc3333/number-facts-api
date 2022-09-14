@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 //pages
 import { Random } from './Pages/Random';
@@ -14,7 +14,7 @@ import { Layout } from './layout';
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<MyFacts />} />
@@ -25,7 +25,7 @@ function App() {
           <Route path="trivia" element={<Trivia page="trivia"/>} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
