@@ -7,11 +7,12 @@ import './styles/MyFact.css';
 export const MyFacts = () => {
   const [savedFacts, setSavedFacts] = useState([]);
   let tobeDeleted = useRef([]); //do not reset in code must contain all the deletions
-  let trackList = useRef();  //will always carry most recent changes to rendered list (with the html in it)
+  let trackList = useRef([]);  //will always carry most recent changes to rendered list (with the html in it)
   let trackStorage =useRef(); //will always carry most recent changes to localstorage
   let originalSaveFacts = useRef(); //carries the original list on first entering My Facts
   let originalLocalStorage = useRef(JSON.parse(localStorage.getItem("SavedFactList")));
   
+
   useEffect(() => {
     setSavedFacts(trackList.current);
   },[]);
@@ -55,6 +56,7 @@ export const MyFacts = () => {
       );
       originalSaveFacts.current = [...trackList.current];
     }
+
   return (
     <div className='format-MyFacts-container'>
       <div className="format-MyFacts">
