@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import { GoTrashcan } from 'react-icons/go';
+import { IoIosSave } from 'react-icons/io';
 
 import './styles/MyFact.css';
 
@@ -55,21 +56,22 @@ export const MyFacts = () => {
       originalSaveFacts.current = [...trackList.current];
     }
   return (
+    <div className='format-MyFacts-container'>
       <div className="format-MyFacts">
         <div className="list-box">
-          <h1>You have {savedFacts.length} saved fact{savedFacts.length === 1 ? "" : "s"}!</h1>
+          <div className="box-title">You have {savedFacts.length} saved fact{savedFacts.length === 1 ? "" : "s"}!</div>
           <div className='utilities-container'>
-            <div className="fact-list-instructions">
+            <div id="fact-list-instructions">
               {savedFacts.length === 0 ? "Click on Tabs to find facts" : ""} <br />
               Click on Facts to Select Them
             </div>
             <div className='trashcan-icon-container'>
-              <span className="trashcan-icon" onClick={(e) => deleteFacts(e)}>
+              <span className="trashcan-icon" title='Remove Selected Facts' onClick={(e) => deleteFacts(e)}>
                 <GoTrashcan size={70}/>
               </span>
             </div>
             <div className='button-container'>
-              <button type="button" onClick={() => saveList()}>Save</button>
+              <IoIosSave id='IoIosSave-icon' title='Save List' onClick={() => saveList()} size={70}/>
             </div>
           </div>
           <div>
@@ -78,6 +80,7 @@ export const MyFacts = () => {
           </div>
         </div>
       </div>
+    </div>
   )
     
 }

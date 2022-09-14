@@ -2,7 +2,9 @@ import { useEffect, useState } from 'react';
 import { useForms } from './customHooks/useForms';
 import { saveFact } from './functions/saveFact';
 
-import './styles/Home.css';
+import { BiFileFind } from 'react-icons/bi';
+import { IoIosSave } from 'react-icons/io';
+
 import './styles/general.css';
 
 export const Random = (props) => {
@@ -49,14 +51,16 @@ export const Random = (props) => {
     return (
         <div className="format">
             <div className="center-box">
-                <h1>Home</h1>
+                <div className="box-title">Find Random Fact</div>
                 {form}
                 <div className='button-container'>
-                    <button type="button" onClick={() => generateFact()}>Get Random Fact</button>
-                    <button type="button" onClick={() => saveFact(fact.text, render)}>Save this Fact</button>
+                    <BiFileFind className='generateFact' title='Get Random Fact' onClick={() => generateFact()} size={70}/>
+                    <IoIosSave className='saveFact' title='Save this Fact' onClick={() => saveFact(fact.text, render)} size={70}/>
                 </div>
-                <div>
-                    {render && fact.text}
+                <div className='searchResult-container'>
+                    <div className='searchResult'>
+                        {render && fact.text}
+                    </div>
                 </div>
             </div>
         </div>

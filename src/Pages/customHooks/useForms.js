@@ -15,7 +15,7 @@ export const useForms = (page) => {
 
     /*
 
-    Home/Random page
+    Random page
 
 
     */
@@ -91,8 +91,8 @@ export const useForms = (page) => {
         input: inputs,
         form:  (
           <form>
-            <label> Enter Any Year
-            <input type="number" name="year" value={inputs.year || ""} onChange={handleChange} />
+            <label> Enter Any Year:
+              <input type="number" autoComplete='false' name="year" value={inputs.year || ""} onChange={handleChange} />
             </label>
           </form>
         )
@@ -110,8 +110,8 @@ export const useForms = (page) => {
         input: inputs,
         form: (
           <form>
-            <label> Enter Any Integer
-              <input type="number" name="math_number" value={inputs.math_number || ""} onChange={handleChange} />
+            <label> Enter Any Integer:
+              <input type="number" autoComplete='false' name="math_number" value={inputs.math_number || ""} onChange={handleChange} />
             </label>
           </form>
         )
@@ -129,8 +129,8 @@ export const useForms = (page) => {
         input: inputs,
         form: (
           <form>
-            <label> Enter Any Integer
-              <input type="number" name="trivia_number" value={inputs.trivia_number || ""} onChange={handleChange} />
+            <label> Enter Any Integer:
+              <input type="number" autoComplete='false' name="trivia_number" value={inputs.trivia_number || ""} onChange={handleChange} />
             </label>
           </form>
         )
