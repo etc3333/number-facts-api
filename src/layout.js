@@ -7,7 +7,7 @@ export const Layout = () => {
             <nav id="nav-bar">
                 <ul>
                     <li>
-                        <NavLink to="/" className="tab">Home</NavLink>
+                        <NavLink to="/" className="tab">Random</NavLink>
                     </li>
                 </ul>
                 <ul>
@@ -15,16 +15,16 @@ export const Layout = () => {
                         <NavLink to="/myFacts" className="tab">My Facts</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/date" className="tab">date</NavLink>
+                        <NavLink to="/date" className="tab">Date</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/year" className="tab">year</NavLink>
+                        <NavLink to="/year" className="tab">Year</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/math" className="tab">math</NavLink>
+                        <NavLink to="/math" className="tab">Math</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/trivia" className="tab">trivia</NavLink>
+                        <NavLink to="/trivia" className="tab">Trivia</NavLink>
                     </li>   
                 </ul>
             </nav>

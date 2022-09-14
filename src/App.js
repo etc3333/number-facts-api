@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //pages
-import { Home } from './Pages/Home';
+import { Random } from './Pages/Random';
 import { MyFacts } from './Pages/MyFacts';
 import { Date } from './Pages/Date';
 import { Math } from './Pages/Math';
@@ -24,7 +24,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home page="random"/>} />
+          <Route index element={<Random page="random"/>} />
           <Route path="myFacts" element={<MyFacts />} />
           <Route path="date" element={<Date page="date"/>} />
           <Route path="year" element={<Year page="year"/>} />

@@ -5,7 +5,7 @@ import { saveFact } from './functions/saveFact';
 import './styles/Home.css';
 import './styles/general.css';
 
-export const Home = (props) => {
+export const Random = (props) => {
     const {input, form} = useForms(props.page)
     const [fact, setFact] = useState({text: ""});
     const [render, setRender] = useState(false);
