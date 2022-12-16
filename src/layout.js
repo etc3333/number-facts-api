@@ -19,6 +19,10 @@ export const Layout = () => {
                         <NavLink to="/" className="tab">My Facts</NavLink>
                     </li>
                 </ul>
+                <ul style={{position: "relative"}}>
+                    <li style={{position: "absolute", width: "1px", height: "100%", backgroundColor: "black"}}>
+                    </li>
+                </ul>
                 <ul>
                     <li>
                         <NavLink to="/random" className="tab">Random</NavLink>

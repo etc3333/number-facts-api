@@ -65,7 +65,12 @@ export const MyFacts = () => {
           <div className='utilities-container'>
             <div id="fact-list-instructions">
               {savedFacts.length === 0 ? "Click on Tabs to find facts" : ""} <br />
-              Click on Facts to Select Them
+              <div>
+                Click on Facts to Select Them
+              </div>
+              <div>
+                <i style={{fontSize: "80%"}}>(After deletion to save new list click the save Icon)</i>
+              </div>
             </div>
             <div className='trashcan-icon-container'>
               <span className="trashcan-icon" title='Remove Selected Facts' onClick={(e) => deleteFacts(e)}>
