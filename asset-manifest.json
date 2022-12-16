@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/number-facts-api/static/css/main.3145b05e.css",
-    "main.js": "/number-facts-api/static/js/main.e1b1a77f.js",
+    "main.js": "/number-facts-api/static/js/main.61667050.js",
     "index.html": "/number-facts-api/index.html",
     "main.3145b05e.css.map": "/number-facts-api/static/css/main.3145b05e.css.map",
-    "main.e1b1a77f.js.map": "/number-facts-api/static/js/main.e1b1a77f.js.map"
+    "main.61667050.js.map": "/number-facts-api/static/js/main.61667050.js.map"
   },
   "entrypoints": [
     "static/css/main.3145b05e.css",
-    "static/js/main.e1b1a77f.js"
+    "static/js/main.61667050.js"
   ]
 }
